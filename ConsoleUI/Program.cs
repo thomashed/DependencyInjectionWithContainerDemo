@@ -11,9 +11,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            BusinessLogic businessLogic = new BusinessLogic();
+            var container = ContainerConfig.Configure();
 
-            businessLogic.ProcessData();
 
             Console.ReadLine();
         }
